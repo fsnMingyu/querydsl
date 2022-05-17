@@ -34,6 +34,8 @@ dependencies {
 	//querydsl 추가
 	implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
 	implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
+	//sql 전체 묶어보기
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.8'
 
 
 	annotationProcessor 'org.projectlombok:lombok'
