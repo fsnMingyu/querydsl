@@ -14,8 +14,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
+//@Commit  커밋이 있을 경우 다음 TEST에서 꼬일수 있기 때문에 주석처리해주고 rollback;
 class MemberTest {
 
+    // 스프링버전이 받쳐줄경우 @Autowired 가능
     @PersistenceContext
     EntityManager em;
 

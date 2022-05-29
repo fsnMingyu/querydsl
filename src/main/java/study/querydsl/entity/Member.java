@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@ToString(of = {"id", "username", "age"})
+@ToString(of = {"id", "username", "age"}) //본인이 소유한 필드만 선언, 연관관계를 타면 안됨.
 public class Member {
 
     @Id
